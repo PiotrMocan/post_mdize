@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "SOME SUMMARY"
   spec.description   = ""
-  spec.homepage      = "no homepage"
+  spec.homepage      = 'https://github.com/KanielOutis/post_mdize'
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 
