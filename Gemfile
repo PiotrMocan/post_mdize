@@ -13,4 +13,4 @@ gem "json"
 
 gem "json_deep_parse"
 
-gem "active_support"
+gem "activesupport"
