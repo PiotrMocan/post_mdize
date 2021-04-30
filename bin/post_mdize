@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
-dir_name = `pwd`
+
 require 'post_mdize'
-PostMdize::Mdize.perform(ARGV.first, ARGV.last, dir_name)
+PostMdize::Mdize.perform(ARGV.first, ARGV.last)

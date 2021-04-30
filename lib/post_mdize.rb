@@ -13,12 +13,11 @@ module PostMdize
     include ActiveSupport::Inflector
     using ::JSONDeepParse
 
-    def self.perform(input_file, output_file, dir_name)
-      pathname = Pathname.new(dir_name).relative_path_from(Pathname.new(`pwd`)).to_s
+    def self.perform(input_file, output_file)
       file = File.read(input_file)
       hash = JSON.deep_parse(file)
 
-      outfile = File.open("#{pathname}/#{output_file}", "w") do |file|
+      outfile = File.open("./#{output_file}", "w") do |file|
         file.write("# README\r\n")
         hash['item'].each do |item|
           file.write("\r\n* __#{item['request']['method']}__ #{path_mdize(item)}\r\n")
