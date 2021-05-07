@@ -8,3 +8,7 @@
 
 - add gem dependency
 - fix windows compatibility issues
+
+## [0.2.7] - 2021-04-30
+
+- fix header parsing
